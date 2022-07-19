@@ -5,7 +5,7 @@ const PORT =   3500 || process.env.PORT;
 dotenv.config({ path: './config.env' });
 
 
-app.get('/', (req, res)=>{
+app.get('/app', (req, res)=>{
   res.send("The page is working")
   console.log(process.env.PORT)
 })
